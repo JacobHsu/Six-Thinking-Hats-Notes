@@ -1,79 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="images/favicon.html">
+<title>Notes app using jQuery</title>
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Six-thinking-hats-notes : jQuery, Demo" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--[if lt IE 9]><script src="js/ie8/ie8-responsive-file-warning.js"></script><![endif]-->
+ 
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Six-thinking-hats-notes</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/htshboy/Six-Thinking-Hats-Notes">View on GitHub</a>
-
-          <h1 id="project_title">Six-thinking-hats-notes</h1>
-          <h2 id="project_tagline">jQuery, Demo</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/htshboy/Six-Thinking-Hats-Notes/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/htshboy/Six-Thinking-Hats-Notes/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="col-md-12">
+		<div class="cal-day">
+		<span></span>
+		</div>
+    </div>  
+	
+	<div class="col-md-4" style="margin:0 auto;float:left">
+		<div class="col-md-12 event-list-block-white">
+		<div class="cal-day">
+		<span>White</span>
+		facts
+		</div>
+		<ul class="event-list" id="event-list-white">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-white" placeholder="NOTES">
+		</div>
+	</div>
+	<div class="col-md-4" style="margin:0 auto;float:none ">
+		<div class="col-md-12 event-list-block-red">
+		<div class="cal-day">
+		<span>Red</span>
+		feelings
+		</div>
+		<ul class="event-list" id="event-list-red">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-red" placeholder="NOTES">
+		</div>
+	</div>
+	<div class="col-md-4" style="margin:0 auto;float:right">
+		<div class="col-md-12 event-list-block-yellow">
+		<div class="cal-day">
+		<span>Yellow</span>
+		benefits
+		</div>
+		<ul class="event-list" id="event-list-yellow">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-yellow" placeholder="NOTES">
+		</div>
+	</div>
+	
+	<div class="col-md-12">
+		<div class="cal-day">
+		<span></span>
+		</div>
     </div>
+	
+		<div class="col-md-4" style="margin:0 auto;float:left">
+		<div class="col-md-12 event-list-block-black">
+		<div class="cal-day">
+		<span>Black</span>
+		cautions
+		</div>
+		<ul class="event-list" id="event-list-black">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-black" placeholder="NOTES">
+		</div>
+	</div>
+	<div class="col-md-4" style="margin:0 auto;float:none ">
+		<div class="col-md-12 event-list-block-green">
+		<div class="cal-day">
+		<span>Green</span>
+		Creativity
+		</div>
+		<ul class="event-list" id="event-list-green">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-green" placeholder="NOTES">
+		</div>
+	</div>
+	<div class="col-md-4" style="margin:0 auto;float:right">
+		<div class="col-md-12 event-list-block-blue">
+		<div class="cal-day">
+		<span>Blue</span>
+		process
+		</div>
+		<ul class="event-list" id="event-list-blue">
+		</ul>
+		<input type="text" class="form-control evnt-input" id="evnt-input-blue" placeholder="NOTES">
+		</div>
+	</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <footer>
+       <p class="copyright"><a href="http://en.wikipedia.org/wiki/Six_Thinking_Hats" target="_blank">Six-thinking-hats</a>-notes maintained by <a href="https://github.com/htshboy">htshboy </a>  Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script src="js/script.js"></script>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Six-thinking-hats-notes maintained by <a href="https://github.com/htshboy">htshboy</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
